@@ -46,11 +46,12 @@ const sidebar = useSidebarStore()
 }
 
 img {
-  margin-bottom: 4px; Optional: spacing between the logo and the text
+  margin-bottom: 4px; /* Optional: spacing between the logo and the text */
 }
 
 span {
   margin-bottom: 0; /* Optional: adjust space between text and bottom */
   margin-left: 6px;
+  font-weight: bold;
 }
 </style>

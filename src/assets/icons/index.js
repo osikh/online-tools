@@ -23,6 +23,10 @@ import {
   cibCcPaypal,
   cibCcApplePay,
   cibCcAmex,
+  cilCopy,
+  cilShareAlt,
+  cilFullscreen,
+  cilFullscreenExit
 } from '@coreui/icons'
 import { cifUs, cifBr, cifIn, cifFr, cifEs, cifPl } from '@coreui/icons'
 import {
@@ -93,6 +97,10 @@ export const iconsSet = Object.assign(
     cilCalculator,
     cilCalendar,
     cilCloudDownload,
+    cilCopy,
+    cilShareAlt,
+    cilFullscreen,
+    cilFullscreenExit,
     cilChartPie,
     cilCheck,
     cilChevronBottom,
