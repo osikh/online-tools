@@ -23,6 +23,14 @@ const router = createRouter({
               /* webpackChunkName: "dashboard" */ '@/views/dashboard/Dashboard.vue'
             ),
         },
+        {
+          path: '/password-generator',
+          name: 'Password Generator',
+          component: () =>
+            import(
+              '@/views/authentication/PasswordGenerator.vue'
+            ),
+        },
       ]
     }
   ],

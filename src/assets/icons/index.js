@@ -101,6 +101,8 @@ export const iconsSet = Object.assign(
     cilShareAlt,
     cilFullscreen,
     cilFullscreenExit,
+    cilLockLocked,
+    cilShieldAlt,
     cilChartPie,
     cilCheck,
     cilChevronBottom,
