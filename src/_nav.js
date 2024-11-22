@@ -50,12 +50,18 @@ export default [
   },
   {
     component: 'CNavTitle',
-    name: 'Hash',
+    name: 'Fake Data',
+  },
+  {
+    component: 'CNavItem',
+    name: 'Fake Person',
+    to: '/fake-person',
+    icon: 'cil-shield-alt'
   },
   {
     component: 'CNavGroup',
-    name: 'SHA1',
-    to: '/sha1',
+    name: 'Fake Person',
+    to: '/fake-person',
     icon: 'cil-puzzle',
     items: [
       {

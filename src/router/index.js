@@ -31,6 +31,14 @@ const router = createRouter({
               '@/views/authentication/PasswordGenerator.vue'
             ),
         },
+        {
+          path: '/fake-person',
+          name: 'Fake Person',
+          component: () =>
+            import(
+              '@/views/fakeData/FakePerson.vue'
+            ),
+        },
       ]
     }
   ],
