@@ -11,6 +11,16 @@ export default [
   },
   {
     component: 'CNavTitle',
+    name: 'Cryptography',
+  },
+  {
+    component: 'CNavItem',
+    name: 'PKCS#12',
+    to: '/cryptography/pkcs12',
+    icon: 'cil-fingerprint'
+  },
+  {
+    component: 'CNavTitle',
     name: 'Authentication',
   },
   {

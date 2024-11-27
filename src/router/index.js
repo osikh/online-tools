@@ -8,7 +8,7 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
+      name: 'Home',
       component: DefaultLayout,
       redirect: '/dashboard',
       children: [
@@ -24,12 +24,20 @@ const router = createRouter({
             ),
         },
         {
+          path: '/cryptography',
+          name: 'Cryptography',
+          children: [
+            {
+              path: 'pkcs12',
+              name: 'PKCS#12 Certificate',
+              component: () => import('@/views/cryptography/PKCS12.vue'),
+            }
+          ]
+        },
+        {
           path: '/password-generator',
           name: 'Password Generator',
-          component: () =>
-            import(
-              '@/views/authentication/PasswordGenerator.vue'
-            ),
+          component: () => import('@/views/authentication/PasswordGenerator.vue'),
         },
         {
           path: '/fake-person',

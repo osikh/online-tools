@@ -26,7 +26,8 @@ import {
   cilCopy,
   cilShareAlt,
   cilFullscreen,
-  cilFullscreenExit
+  cilFullscreenExit,
+  cilFingerprint
 } from '@coreui/icons'
 import { cifUs, cifBr, cifIn, cifFr, cifEs, cifPl } from '@coreui/icons'
 import {
@@ -102,6 +103,7 @@ export const iconsSet = Object.assign(
     cilFullscreen,
     cilFullscreenExit,
     cilLockLocked,
+    cilFingerprint,
     cilShieldAlt,
     cilChartPie,
     cilCheck,
