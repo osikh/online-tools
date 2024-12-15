@@ -18,11 +18,12 @@ jobs:
           uses: actions/setup-node@v4
           with: 
             node-version: 20.x
+            cache: 'yarn'      # Cache dependencies for yarn
 
         - name: Install Packages and Build Application  # Installs npm packages and builds the Vue.js application.
           run: |
-            npm ci
-            npm run build
+            yarn
+            yarn build
 
         - name: Setup Pages  # Configures pages for deployment.
           id: pages
