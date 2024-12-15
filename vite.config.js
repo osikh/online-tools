@@ -12,7 +12,7 @@ export default defineConfig({
     vue(),
     vueDevTools(),
   ],
-  base: './',
+  base: process.env.NODE_ENV === "production" ? "/online-tools/" : "/",
   css: {
     postcss: {
       plugins: [

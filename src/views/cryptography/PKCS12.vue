@@ -5,6 +5,7 @@ export default {
   data() {
     return {
       certificateFile: null,
+      certificateFileName: "",
       certificatePasskey: null,
       certificateInfo: null,
       error: null,
@@ -16,8 +17,16 @@ export default {
     },
     // Handle file upload
     onFileChange(event) {
-      this.certificateFile = event.target.files[0];
-      if (this.certificateFile) {
+      if (event.target.files[0] === undefined) {
+        event.preventDefault()
+        return
+      }
+
+      let prevFile = this.certificateFile
+      this.certificateFile = event.target.files[0]
+      this.certificateFileName = this.certificateFile.name
+
+      if (this.certificateFile && prevFile != this.certificateFile) {
         this.certificatePasskey = prompt('Enter the password for the certificate');
         if (this.certificatePasskey) {
           this.loadP12Certificate(this.certificateFile, this.certificatePasskey);
