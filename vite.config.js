@@ -12,7 +12,7 @@ export default defineConfig({
     vue(),
     vueDevTools(),
   ],
-  base: "./",
+  base: "/online-tools/",
   css: {
     postcss: {
       plugins: [
